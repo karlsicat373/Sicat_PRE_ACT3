@@ -1,0 +1,9 @@
+<section class="skills-section">
+  <h2 class="section-title">Technical Skills</h2>
+  <p class="section-intro">Select a skill below to see it highlighted in my profile.</p>
+  <ul>
+    @for (skill of skills(); track skill) {
+      <li><button class="skill" type="button" (click)="skillSelected.emit(skill)">{{ skill }} <span aria-hidden="true">↗</span></button></li>
+    }
+  </ul>
+</section>

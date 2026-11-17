@@ -1,0 +1,32 @@
+.intro {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: radial-gradient(ellipse at top, #59406f 0%, #342044 58%, #25152f 100%);
+  color: #fffaf0;
+  padding: 48px 28px 38px;
+  border: 1px solid #c7a65f;
+  border-radius: 22px;
+  box-shadow: 0 16px 38px rgba(48, 32, 68, .18);
+}
+.intro::before, .intro::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(226, 199, 133, .18);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.intro::before { top: -125px; left: -95px; }
+.intro::after { right: -105px; bottom: -135px; }
+.ornament { color: #e6cb8c; letter-spacing: 9px; font-size: 1.15rem; }
+.eyebrow { color: #e8d6a8; font-size: .76rem; letter-spacing: 4px; font-weight: 700; margin: 15px 0; }
+.intro h1 { color: #f1d99e; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.2; margin: 12px 0; }
+.student-info { color: #e1cde9; font-weight: 700; letter-spacing: 2px; font-size: .9rem; }
+.student-info span { color: #d6b76f; padding: 0 8px; }
+.contact-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; margin: 25px 0 20px; font-size: .9rem; color: #f6efdf; overflow-wrap: anywhere; }
+.gold-line { height: 2px; width: 115px; margin: 0 auto; background: linear-gradient(90deg, transparent, #d9ba73, transparent); }
+.profile-section { background: #fffdfa; padding: 26px 28px; margin-top: 25px; border: 1px solid #eadfc8; border-left: 5px solid #bd9a53; border-radius: 14px; box-shadow: 0 6px 20px rgba(48, 32, 68, .06); }
+.profile-section p { margin-bottom: 0; }
+@media (max-width: 600px) { .intro { padding: 36px 18px 30px; } .contact-info { flex-direction: column; gap: 7px; } .profile-section { padding: 21px; } }
